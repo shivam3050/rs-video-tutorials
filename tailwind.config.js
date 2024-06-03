@@ -19,4 +19,4 @@ const config = {
 export default config;
 
 // For CommonJS compatibility
-module.exports = config;
+ module.exports = config;
