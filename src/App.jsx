@@ -38,18 +38,18 @@ function App() {
       <div style={{ minWidth:'740px'}} className="app size1:bg-green-500 p-2 px-8 bg-zinc-950 w-full">
         <nav style={{ minWidth:'100%', minHeight:'50px' }} className="navbar text-white bg-zinc-950 flex justify-between gap-1 w-full overflow-hidden py-2">
           <span style={{ minWidth:'170px', width:'170px' }} className="inline-block ">
-            <div className="logo bg-transparent rounded-full flex items-center -r -zinc-600">
+            <div className="logo bg-zinc-50 shadow-zinc-600 shadow-md rounded-full flex items-center border border-zinc-600">
               <img  className='px-3 py-2' src={logo} alt="logo" />
             </div>
           </span>
           <span className="inline-block  flex place-items-center">
-            <span className="txt-search inline-block flex">
-              <input style={{ minWidth: '400px', width:'400px' }} className="bg-zinc-950 inline-block -l -t -b -zinc-600 rounded-l-3xl" type="text" name="" id="" />
-              <div style={{ minWidth:'50px', width:'50px', minHeight:'50px' }} className="inline-block bg-zinc-800 material-icon-r -t -b -zinc-600 rounded-r-full flex items-center justify-center">
+            <span className="txt-search inline-block flex ">
+              <input style={{ minWidth: '400px', width:'400px' }} className="bg-zinc-950 inline-block border-l border-t border-b border-zinc-600 rounded-l-3xl" type="text" name="" id="" />
+              <div style={{ minWidth:'50px', width:'50px', minHeight:'50px' }} className="inline-block bg-zinc-800 material-icon border border-zinc-600 rounded-r-full flex items-center justify-center">
                 <img className="" src={search} alt="search" />
               </div>
             </span>
-            <div style={{ minWidth:'50px', width:'50px', minHeight:'50px' }} className="inline-block bg-zinc-800 material-icon  -zinc-600 rounded-full flex items-center justify-center">
+            <div style={{ minWidth:'50px', width:'50px', minHeight:'50px' }} className="inline-block bg-zinc-800 material-icon border border-zinc-600 rounded-full flex items-center justify-center">
                 <img className="" src={mic} alt="mic" />
             </div>
           </span>
@@ -99,6 +99,13 @@ function App() {
               <HomeButton value={"All"} value2={""}/>
               <HomeButton value={"Latest Videos"} value2={""}/>
               <HomeButton value={"Mixes"} value2={""}/>
+              <HomeButton value={"Live Classes"} value2={""}/>
+              <HomeButton value={"Shorts"} value2={""}/>
+              <HomeButton value={"Recently"} value2={"Played"}/>
+              <HomeButton value={"Your Watched"} value2={""}/>
+              <HomeButton value={"New To You"} value2={""}/>
+              <HomeButton value={"History"} value2={""}/>
+              <HomeButton value={"Monitor Your Watchtime"} value2={""}/>
               <HomeButton value={"Live Classes"} value2={""}/>
               <HomeButton value={"Shorts"} value2={""}/>
               <HomeButton value={"Recently"} value2={"Played"}/>
