@@ -1,8 +1,9 @@
 // screens.js
 const screens = {
-  'iphone-se': { 'min': '0px', 'max': '374px' },
-  'iphone-12-pro': { 'min': '375px', 'max': '843px' },
-  'desktop': { 'min': '1990px' },
+  'size0': { 'min': '0px', 'max': '739px' },
+  'size1': { 'min': '740px', 'max': '914px' },
+  'size2': { 'min': '915px', 'max': '1049px' },
+  'size3': { 'min': '1050px' },
 };
 
 export default screens;

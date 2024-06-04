@@ -17,6 +17,14 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+
+  const videos = [
+    "https://www.youtube.com/embed/bXuxIv9MRa8",
+    "https://youtube.com/embed/l5HDFM4WG1Y",
+    "https://youtube.com/embed/py-_-4VAXA0",
+    "https://www.youtube.com/embed/bXuxIv9MRa8",
+    // Add more video URLs as needed
+];
     // const mainNavWidthHandle = () => {
     //   var txtBoxSpanWidth = w-40
     //   var logoBoxSpanWidth = w-40
@@ -27,38 +35,38 @@ function App() {
 
   return (
     <>
-      <div style={{ minWidth: '740px' }} className="app p-2 px-8 bg-zinc-950 w-full">
+      <div style={{ minWidth:'740px'}} className="app size1:bg-green-500 p-2 px-8 bg-zinc-950 w-full">
         <nav style={{ minWidth:'100%', minHeight:'50px' }} className="navbar text-white bg-zinc-950 flex justify-between gap-1 w-full overflow-hidden py-2">
-          <span style={{ minWidth:'170px', width:'170px' }} className="inline-block border">
-            <div className="logo bg-transparent rounded-full flex items-center border-r border-zinc-600">
+          <span style={{ minWidth:'170px', width:'170px' }} className="inline-block ">
+            <div className="logo bg-transparent rounded-full flex items-center -r -zinc-600">
               <img  className='px-3 py-2' src={logo} alt="logo" />
             </div>
           </span>
-          <span className="inline-block border flex place-items-center">
+          <span className="inline-block  flex place-items-center">
             <span className="txt-search inline-block flex">
-              <input style={{ minWidth: '400px', width:'400px' }} className="bg-zinc-950 inline-block border-l border-t border-b border-zinc-600 rounded-l-3xl" type="text" name="" id="" />
-              <div style={{ minWidth:'50px', width:'50px', minHeight:'50px' }} className="inline-block bg-zinc-800 material-iconborder-r border-t border-b border-zinc-600 rounded-r-full flex items-center justify-center">
+              <input style={{ minWidth: '400px', width:'400px' }} className="bg-zinc-950 inline-block -l -t -b -zinc-600 rounded-l-3xl" type="text" name="" id="" />
+              <div style={{ minWidth:'50px', width:'50px', minHeight:'50px' }} className="inline-block bg-zinc-800 material-icon-r -t -b -zinc-600 rounded-r-full flex items-center justify-center">
                 <img className="" src={search} alt="search" />
               </div>
             </span>
-            <div style={{ minWidth:'50px', width:'50px', minHeight:'50px' }} className="inline-block bg-zinc-800 material-icon border border-zinc-600 rounded-full flex items-center justify-center">
+            <div style={{ minWidth:'50px', width:'50px', minHeight:'50px' }} className="inline-block bg-zinc-800 material-icon  -zinc-600 rounded-full flex items-center justify-center">
                 <img className="" src={mic} alt="mic" />
             </div>
           </span>
-          <span style={{ minWidth:'170px', width:'170px' }} className="inline-block border flex justify-end gap-2 place-items-center">
-            <div style={{ minWidth:'50px', width:'50px', minHeight:'50px' }} className='inline-block bg-zinc-800 material-icon border-r border-t  border-b border-zinc-600 rounded-full flex items-center justify-center'>
+          <span style={{ minWidth:'170px', width:'170px' }} className="inline-block  flex justify-end gap-2 place-items-center">
+            <div style={{ minWidth:'50px', width:'50px', minHeight:'50px' }} className='inline-block bg-zinc-800 material-icon -r -t  -b -zinc-600 rounded-full flex items-center justify-center'>
               <img className="" src={golive} alt="golive" />
             </div>
-            <div style={{ minWidth:'50px', width:'50px', minHeight:'50px' }} className='inline-block bg-zinc-800 material-icon border-r border-t  border-b border-zinc-600 rounded-full flex items-center justify-center'>
+            <div style={{ minWidth:'50px', width:'50px', minHeight:'50px' }} className='inline-block bg-zinc-800 material-icon -r -t  -b -zinc-600 rounded-full flex items-center justify-center'>
               <img className="" src={bell} alt="bell" />
             </div>
-            <div style={{ minWidth:'50px', width:'50px', minHeight:'50px' }}className='inline-block bg-zinc-800 material-icon border-r border-t  border-b border-zinc-600 rounded-full min-h-10px flex items-center justify-center'>
+            <div style={{ minWidth:'50px', width:'50px', minHeight:'50px' }}className='inline-block bg-zinc-800 material-icon -r -t  -b -zinc-600 rounded-full min-h-10px flex items-center justify-center'>
               <img className="" src={mic} alt="" />
             </div>
           </span>
         </nav>
         <div className="body bg-zinc-950 w-full flex gap-2 py-2">
-          <section style={{ width:'3%' }} className="border left bg-zinc-950 flex flex-col gap-9 py-4">
+          <section style={{ width:'3%' }} className=" left bg-zinc-950 flex flex-col gap-9 py-4">
           <div className='text-tiny text-white text-center w-full mx-auto flex flex-col justify-center'>
             <img className='bg-zinc-950 mx-auto w-8' src={home} alt="" />
               Home
@@ -99,23 +107,11 @@ function App() {
               <HomeButton value={"History"} value2={""}/>
               <HomeButton value={"Monitor Your Watchtime"} value2={""}/>
             </div>
-            <div style={{
-                        display: 'flex',
-                        flexDirection: 'row',
-                        flexWrap: 'wrap'
-                        }} className="mainvideos">
-                      <MainPageVideo />
-                      <MainPageVideo />
-                      <MainPageVideo />
-                      <MainPageVideo />
-                      <MainPageVideo />
-                      <MainPageVideo />
-                      <MainPageVideo />
-                      <MainPageVideo />
-                      <MainPageVideo />
-                      <MainPageVideo />
-                      <MainPageVideo />
-                    </div>
+            <div className="main-content flex flex-wrap gap-4">
+            {videos.map((videoUrl, index) => (
+                <MainPageVideo key={index} videoUrl={videoUrl} />
+            ))}
+            </div>
           </aside>
         </div>
       </div>
