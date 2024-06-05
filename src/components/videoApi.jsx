@@ -1,7 +1,7 @@
 function YouTubeVideo({ videoUrl }) {
     return (
         <div className="video-container">
-            <iframe className="rounded-md"
+            <iframe className="rounded-t-md"
                 title="YouTube video player"
                 width="100%"
                 style={{ aspectRatio:'2/1'}}

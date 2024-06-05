@@ -23,6 +23,14 @@ function App() {
     "https://youtube.com/embed/l5HDFM4WG1Y",
     "https://youtube.com/embed/py-_-4VAXA0",
     "https://www.youtube.com/embed/bXuxIv9MRa8",
+    "https://www.youtube.com/embed/bXuxIv9MRa8",
+    "https://youtube.com/embed/l5HDFM4WG1Y",
+    "https://youtube.com/embed/py-_-4VAXA0",
+    "https://www.youtube.com/embed/bXuxIv9MRa8",
+    "https://www.youtube.com/embed/bXuxIv9MRa8",
+    "https://youtube.com/embed/l5HDFM4WG1Y",
+    "https://youtube.com/embed/py-_-4VAXA0",
+    "https://www.youtube.com/embed/bXuxIv9MRa8",
     // Add more video URLs as needed
 ];
     // const mainNavWidthHandle = () => {
@@ -35,10 +43,10 @@ function App() {
 
   return (
     <>
-      <div style={{ minWidth:'740px'}} className="app size1:bg-green-500 p-2 px-8 bg-zinc-950 w-full">
+      <div style={{ minWidth:'740px'}} className="app p-2 px-8 bg-zinc-950 w-full">
         <nav style={{ minWidth:'100%', minHeight:'50px' }} className="navbar text-white bg-zinc-950 flex justify-between gap-1 w-full overflow-hidden py-2">
           <span style={{ minWidth:'170px', width:'170px' }} className="inline-block ">
-            <div className="logo bg-zinc-50 shadow-zinc-600 shadow-md rounded-full flex items-center border border-zinc-600">
+            <div style={{backgroundColor:'white'}} className="logo shadow-slate-900 shadow-md rounded-lg flex items-center border-r-md border-slta-900">
               <img  className='px-3 py-2' src={logo} alt="logo" />
             </div>
           </span>
@@ -84,7 +92,7 @@ function App() {
               You
             </div>
           </section>
-          <aside style={{ width:'97%' }} className="main bg-zinc-950 ml-2">
+          <aside style={{ width:'97%' }} className="main bg-zinc-950 ml-2 flex flex-col gap-3">
             <div style={{
                   // For Firefox
               scrollbarWidth: 'none',
