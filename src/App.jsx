@@ -17,18 +17,22 @@ function App() {
 
 
   const videos = [
-    "https://www.youtube.com/embed/bXuxIv9MRa8",
+    "https://www.youtube.com/embed/066OUAPMApc",
+    "https://www.youtube.com/embed/Ljd31qQ86jg",
+    "https://www.youtube.com/embed/rdOcTme1d3M",
+    "https://youtube.com/embed/py-_-4VAXA0",
+    "https://youtube.com/embed/zSiLEv7J37U",
+    "https://www.youtube.com/embed/H-0FSbhzrkI",
+    "https://www.youtube.com/embed/Ljd31qQ86jg",
+
+    "https://www.youtube.com/embed/H-0FSbhzrkI",
+    "https://youtube.com/embed/py-_-4VAXA0",
+    "https://www.youtube.com/embed/H-0FSbhzrkI",
+    "https://youtube.com/embed/l5HDFM4WG1Y",
+    "https://www.youtube.com/embed/H-0FSbhzrkI",
     "https://youtube.com/embed/l5HDFM4WG1Y",
     "https://youtube.com/embed/py-_-4VAXA0",
-    "https://www.youtube.com/embed/bXuxIv9MRa8",
-    "https://www.youtube.com/embed/bXuxIv9MRa8",
-    "https://youtube.com/embed/l5HDFM4WG1Y",
-    "https://youtube.com/embed/py-_-4VAXA0",
-    "https://www.youtube.com/embed/bXuxIv9MRa8",
-    "https://www.youtube.com/embed/bXuxIv9MRa8",
-    "https://youtube.com/embed/l5HDFM4WG1Y",
-    "https://youtube.com/embed/py-_-4VAXA0",
-    "https://www.youtube.com/embed/bXuxIv9MRa8",
+    
     // Add more video URLs as needed
 ];
 const githubUsername = "shivam3050";
@@ -115,7 +119,7 @@ const githubUsername = "shivam3050";
               <HomeButton value={"Monitor Your Watchtime"} value2={""}/>
               <HomeButton value={"Live Classes"} value2={""}/>
               <HomeButton value={"Shorts"} value2={""}/>
-              <HomeButton value={"Recently"} value2={"Played"}/>
+              <HomeButton value={"Recently"} value2={"Pla`yed"}/>
               <HomeButton value={"Your Watched"} value2={""}/>
               <HomeButton value={"New To You"} value2={""}/>
               <HomeButton value={"History"} value2={""}/>
